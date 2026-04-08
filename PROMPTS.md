@@ -69,17 +69,29 @@ Lo usé tal cual. La explicación extra me sirvio para ver como son multiples co
 
 ---
 
-### 3 - listas.py
+### 3 - listas.py (Patrón: Verificador cognitivo)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
+> Estoy resolviendo un ejercicio de listas en Python con estas reglas en mente para 5 funciones:
+> 1. `suma_lista`: pienso usar la función nativa sum().
+> 2. `filtrar_pares`: pienso usar una comprensión de listas (list comprehension) con n % 2 == 0.
+> 3. `invertir_lista`: pienso usar slicing [::-1] para asegurar que se crea una nueva lista y no se modifica la original.
+> 4. `eliminar_duplicados`: pienso iterar y agregar a una nueva lista solo si el elemento "not in" la nueva lista.
+> 5. `aplanar_lista`: pienso usar un for y el metodo .extend() para unir las sublistas.
 > 
+> ¿Podes revisar mi lógica como verificador cognitivo?
+> 1. Enumera casos borde que deberia testear.
+> 2. Decime errores tipicos.
+> 3. Propone 3 tests con entradas y salidas esperadas.
+> Despues de eso, proponé el codigo final. A su vez hazme una breve descripcion por fuera del codigo explicandome para que sirve cada parte del codigo y los resultados que otorga.
 
 **Resultado obtenido**:
-
+La IA valido mi logica diciendo que las elecciones (como el slicing o el metodo extend) eran las mas eficientes y correctas. Me advirtio sobre casos borde (como recibir listas vacías o listas anidadas de forma irregular). Finalmente me dio el codigo y me explico línea por linea como el slicing crea una copia en memoria y por qué `.extend()` es mejor que `.append()` para aplanar listas.
 
 **¿Lo usaste tal cual o lo modificaste?**
+Lo usé tal cual. El analisis de la IA confirmo que mi codigo era correcto y la explicación extra sobre la diferencia entre `append` y `extend` me ayudó a entender mejor las listas.
 
 
 ---
