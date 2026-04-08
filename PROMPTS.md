@@ -153,18 +153,24 @@ Lo usé tal cual. El proceso de reflexión me sirvió para justificar por qué u
 
 ---
 
-### 7 - operaciones.py
+### 7 - operaciones.py (Patrón: Enfoques alternativos)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
-> 
+> Tengo que implementar la función `caesar_cipher(texto, desplazamiento)` para un TP. 
+> Compará 3 enfoques para resolverlo en Python:
+> A) Usar `ord()` y `chr()` con aritmética modular.
+> B) Crear un string con el abecedario (`abc = "abcd..."`) y buscar el índice.
+> C) Usar el método nativo `str.maketrans()`.
+> Elegí el más adecuado para principiantes que contemple también mayúsculas de forma elegante, justificá tu elección, y escribí el código de esa función junto con las otras 3 del módulo (es_palindromo, capitalizar_palabras, contar_vocales). 
+> A su vez hazme una breve descripción por fuera del código explicándome para qué sirve cada parte del código y los resultados que otorga.
 
 **Resultado obtenido**:
-
+La IA Descarto `str.maketrans` por ser menos didactico y el string del abecedario porque manejar mayusculas y minusculas lo volvia complicado. Recomendo usar `ord()` y `chr()` (Enfoque A) porque enseña como funciona la tabla ASCII por debajo. Luego me dio el código y me explico como la función `.title()` simplificaba el ejercicio de capitalizar, y como la matematica `(ord - base + despl) % 26` garantiza que la letra vuelva a la 'a' después de la 'z'
 
 **¿Lo usaste tal cual o lo modificaste?**
-
+Lo usé tal cual. Ver la comparación me ayudó a entender que a veces la forma más matemática es la más corta. La explicación del modulo (%) en el cifrado César fue clave para entender esa línea del código
 
 ---
 
