@@ -181,3 +181,7 @@ Respondé brevemente (3-5 oraciones):
 - ¿Qué aprendiste sobre cómo formular buenos prompts?
 - ¿En qué casos la IA fue útil y en cuáles no?
 - ¿Qué harías diferente la próxima vez?
+
+Para formular buenos prompts la verdad me base en la guia que nos dieron pero a su vez configure un chat con gemini donde es un especialista en promts y me ayudo a generar unos buenos con todos los detalles necesarios.
+La verdad me fue util en casi todos los casos, quizas en lo que tiene q ver mas con explicar por pasos, se saltea algunas cosas pero me ayuda a entender si se lo aclaro, y es un poco complicado el escribir tan especificamente lo que deseo y que no se confunda luego de responder 4 o 5 mensajes con pautas distintas.
+Quizas la proxima vez intentaria combinar varias IAs para q los resultados sean mas exactos.
