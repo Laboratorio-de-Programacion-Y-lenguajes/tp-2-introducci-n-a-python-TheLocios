@@ -41,7 +41,7 @@ Explicá qué cambios hiciste y por qué (o por qué no cambiaste nada).
 > No uses librerías externas. Mostrá una función armar_mensaje(nombre, edad, ciudad) con docstring.
 
 **Resultado obtenido**:
-Genero el codigo de la función `armar_mensaje` que pide el README, explicando como usar f-strings y validación tipos de datos.
+Genero el codigo de la función `armar_mensaje` que pide el README, explicando como usar f-strings y validación tipos de datos
 
 **¿Lo usaste tal cual o lo modificaste?**
 Lo modifique. Tuve que integrar esta función nueva al final del archivo `src/variables.py`, el cual ya traia otras 5 funciones (`crear_saludo`, `suma_enteros`, etc.) que tambien complete manual. De esta forma, me asegure de que el modulo pase los tests
@@ -62,10 +62,10 @@ Lo modifique. Tuve que integrar esta función nueva al final del archivo `src/va
 > A su vez hazme una breve descripcion por fuera del codigo explicandome para que sirve cada parte del codigo y los resultados que otorga.
 
 **Resultado obtenido**:
-La IA me hizo las tres preguntas correspondientes. Luego de responderle, genero las funciones con la estructura condicional correcta y me agregó una explicación detallada de como funciona el flujo de los `if/elif/else` y la logica de los operadores logicos (`and`, `or`) en el caso del año bisiesto.
+La IA me hizo las tres preguntas correspondientes. Luego de responderle, genero las funciones con la estructura condicional correcta y me agregó una explicación detallada de como funciona el flujo de los `if/elif/else` y la logica de los operadores logicos (`and`, `or`) en el caso del año bisiesto
 
 **¿Lo usaste tal cual o lo modificaste?**
-Lo usé tal cual. La explicación extra me sirvio para ver como son multiples condiciones simultáneas antes de pegar el codigo.
+Lo usé tal cual. La explicación extra me sirvio para ver como son multiples condiciones simultáneas antes de pegar el codigo
 
 ---
 
@@ -88,27 +88,29 @@ Lo usé tal cual. La explicación extra me sirvio para ver como son multiples co
 > Despues de eso, proponé el codigo final. A su vez hazme una breve descripcion por fuera del codigo explicandome para que sirve cada parte del codigo y los resultados que otorga.
 
 **Resultado obtenido**:
-La IA valido mi logica diciendo que las elecciones (como el slicing o el metodo extend) eran las mas eficientes y correctas. Me advirtio sobre casos borde (como recibir listas vacías o listas anidadas de forma irregular). Finalmente me dio el codigo y me explico línea por linea como el slicing crea una copia en memoria y por qué `.extend()` es mejor que `.append()` para aplanar listas.
+La IA valido mi logica diciendo que las elecciones (como el slicing o el metodo extend) eran las mas eficientes y correctas. Me advirtio sobre casos borde (como recibir listas vacías o listas anidadas de forma irregular). Finalmente me dio el codigo y me explico línea por linea como el slicing crea una copia en memoria y por qué `.extend()` es mejor que `.append()` para aplanar listas
 
 **¿Lo usaste tal cual o lo modificaste?**
-Lo usé tal cual. El analisis de la IA confirmo que mi codigo era correcto y la explicación extra sobre la diferencia entre `append` y `extend` me ayudó a entender mejor las listas.
+Lo usé tal cual. El analisis de la IA confirmo que mi codigo era correcto y la explicación extra sobre la diferencia entre `append` y `extend` me ayudó a entender mejor las listas
 
 
 ---
 
-### 4 - diccionarios.py
+### 4 - diccionarios.py (Patrón: Generación infinita)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
-> 
+> Generá 5 ejemplos distintos de cómo diferentes textos (con mayúsculas, minúsculas y palabras repetidas) se transforman en diccionarios de frecuencias de palabras.
+> Luego, generá 3 ejemplos de cómo se combinan dos diccionarios cuando tienen claves que entran en conflicto.
+> A partir de analizar esos ejemplos, extraé una regla general matemática/lógica para implementar en Python las funciones `contar_palabras`, `invertir_diccionario`, `merge_diccionarios` y `filtrar_por_valor`.
+> A su vez hazme una breve descripción por fuera del código explicándome para qué sirve cada parte del código y los resultados que otorga.
 
 **Resultado obtenido**:
-
+La IA genero los ejemplos visuales mostrando el "antes" y el "despues". A partir de eso, extrajo la regla general y me propuso el codigo. Ademas, me explicó en detalle como funciona `.get(palabra, 0)` para evitar errores, y como el metodo `.update()` sobrescribe automaticamente las claves repetidas dando prioridad al segundo diccionario
 
 **¿Lo usaste tal cual o lo modificaste?**
-
-
+Lo usé tal cual. Ver la generación de ejemplos fue muy bueno para entender como se estructuran los pares "valor" internamente, y la explicación de los metodos `.items()` y `.update()` justifico el código sugerido
 ---
 
 ### 5 - loops.py
