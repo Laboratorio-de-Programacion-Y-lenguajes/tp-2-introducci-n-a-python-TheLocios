@@ -29,18 +29,22 @@ Explicá qué cambios hiciste y por qué (o por qué no cambiaste nada).
 
 ## Mis prompts
 
-### 1 - variables.py
+### 1 - variables.py (Patrón: Receta)
 
-**Herramienta**: 
+**Herramienta**: gemini
 
 **Prompt usado**:
-> 
+> actua como tutor de Python 3.13. Dame una receta paso a paso para:
+> 1. pedir por consola nombre (str), edad (int) y ciudad (str),
+> 2. validar que edad sea un entero,
+> 3. devolver un string usando f-strings con el formato: "Soy {nombre}, tengo {edad} años y vivo en {ciudad}."
+> No uses librerías externas. Mostrá una función armar_mensaje(nombre, edad, ciudad) con docstring.
 
 **Resultado obtenido**:
-
+Genero el codigo de la función `armar_mensaje` que pide el README, explicando como usar f-strings y validación tipos de datos.
 
 **¿Lo usaste tal cual o lo modificaste?**
-
+Lo modifique. Tuve que integrar esta función nueva al final del archivo `src/variables.py`, el cual ya traia otras 5 funciones (`crear_saludo`, `suma_enteros`, etc.) que tambien complete manual. De esta forma, me asegure de que el modulo pase los tests
 
 ---
 
