@@ -113,18 +113,22 @@ La IA genero los ejemplos visuales mostrando el "antes" y el "despues". A partir
 Lo usé tal cual. Ver la generación de ejemplos fue muy bueno para entender como se estructuran los pares "valor" internamente, y la explicación de los metodos `.items()` y `.update()` justifico el código sugerido
 ---
 
-### 5 - loops.py
+### 5 - loops.py (Patrón: Refinamiento de preguntas)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
-> 
+> P1: ¿Cómo calculo la serie de Fibonacci usando un bucle for en Python devolviendo una lista?
+> P2: ¿Qué pasa si n es 0 o 1? ¿Cómo manejo esos casos borde para que no rompa el código?
+> P3: Entendido. Por otro lado, ¿cómo implemento una función `es_primo(n)` de manera eficiente sin tener que dividir por absolutamente todos los números hasta n?
+> P4: ¡Genial la optimización de la raíz cuadrada! Ahora, mostrame la implementación final de las 5 funciones del módulo (contar_hasta, tabla_multiplicar, suma_digitos, es_primo, fibonacci) aplicando estas mejoras.
+> A su vez hazme una breve descripción por fuera del código explicándome para qué sirve cada parte del código y los resultados que otorga.
 
 **Resultado obtenido**:
-
+A traves de las preguntas, la IA primero me explico cómo inicializar la lista de Fibonacci y manejar los retornos tempranos para n=0 y n=1. Luego, me enseño el truco matematico de iterar solo hasta la raíz cuadrada del número en `es_primo` para mejor rendimiento. Entonces me dio el codigo y me explico como el bucle `for digito in str(n)` convierte el número a texto para poder recorrerlo por digito de forma sencilla
 
 **¿Lo usaste tal cual o lo modificaste?**
-
+Lo usé tal cual. Las preguntas me ayudaron a entender la logica de los casos borde de Fibonacci antes de ver el codigo terminado, y la explicación final me ayudo a terminar de comprender sobre la función `range()`
 
 ---
 
@@ -141,10 +145,10 @@ Lo usé tal cual. Ver la generación de ejemplos fue muy bueno para entender com
 > A su vez hazme una breve descripción por fuera del código explicándome para qué sirve cada parte del código y los resultados que otorga.
 
 **Resultado obtenido**:
-La IA analizo las opciones y me explico que usar diccionarios y tuplas para la cache en "memoizar" es el estándar (O(1) en búsqueda). Para "reducir", desaconsejo la recursión debido al limite de llamadas en Python y recomendó un bucle `for` tradicional con un acumulador. Luego genero el codigo y me agrego una descripción linea por linea explicando cómo las funciones internas (closures) pueden recordar variables del entorno exterior, como el diccionario `cache`.
+La IA me explico que usar diccionarios y tuplas para la cache en "memoizar" es el estándar (O(1) en búsqueda). Para "reducir", desaconsejo la recursión debido al limite de llamadas en Python y recomendó un bucle `for` tradicional con un acumulador. Luego genero el codigo y me agrego una descripción linea por linea explicando como las funciones internas (closures) pueden recordar variables del entorno exterior, como el diccionario `cache`
 
 **¿Lo usaste tal cual o lo modificaste?**
-Lo usé tal cual. El proceso de reflexión me sirvió para justificar por qué un `for` es más seguro que la recursión en Python para reducir listas grandes, y la explicación final me dejó claro el concepto de funciones anidadas.
+Lo usé tal cual. El proceso de reflexión me sirvió para justificar por qué un `for` es más seguro que la recursión en Python para reducir listas grandes, y la explicación final me dejó claro el concepto de funciones anidadas
 
 
 ---
