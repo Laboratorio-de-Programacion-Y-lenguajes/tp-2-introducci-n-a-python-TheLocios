@@ -126,17 +126,23 @@ Lo usé tal cual. El analisis de la IA confirmo que mi codigo era correcto y la 
 
 ---
 
-### 6 - funciones.py
+### 6 - funciones.py (Patrón: Reflexión)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
-> 
+> Necesito implementar 4 funciones de orden superior en Python: aplicar_funcion, componer, memoizar y reducir (sin functools). 
+> Quiero comparar enfoques para "memoizar" y "reducir" priorizando simplicidad y performance para un TP universitario:
+> - Para "memoizar": ¿es mejor usar recursión, o guardar los argumentos (*args) como tuplas en un diccionario?
+> - Para "reducir": iterar con un for clásico vs usar recursión.
+> Analizá pros y contras de cada enfoque (rendimiento, límite de recursión). Luego recomendá UNO para cada caso y escribí el código de las 4 funciones.
+> A su vez hazme una breve descripción por fuera del código explicándome para qué sirve cada parte del código y los resultados que otorga.
 
 **Resultado obtenido**:
-
+La IA analizo las opciones y me explico que usar diccionarios y tuplas para la cache en "memoizar" es el estándar (O(1) en búsqueda). Para "reducir", desaconsejo la recursión debido al limite de llamadas en Python y recomendó un bucle `for` tradicional con un acumulador. Luego genero el codigo y me agrego una descripción linea por linea explicando cómo las funciones internas (closures) pueden recordar variables del entorno exterior, como el diccionario `cache`.
 
 **¿Lo usaste tal cual o lo modificaste?**
+Lo usé tal cual. El proceso de reflexión me sirvió para justificar por qué un `for` es más seguro que la recursión en Python para reducir listas grandes, y la explicación final me dejó claro el concepto de funciones anidadas.
 
 
 ---
