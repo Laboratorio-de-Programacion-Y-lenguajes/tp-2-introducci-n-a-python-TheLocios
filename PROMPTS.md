@@ -48,18 +48,24 @@ Lo modifique. Tuve que integrar esta función nueva al final del archivo `src/va
 
 ---
 
-### 2 - condicionales.py
+### 2 - condicionales.py (Patrón: Interacción invertida)
 
-**Herramienta**: 
+**Herramienta**: Gemini
 
 **Prompt usado**:
-> 
+> Quiero implementar 4 funciones en Python: clasificar_numero, mayor_de_tres, clasificar_nota y es_bisiesto.
+> Antes de escribir el codigo haceme 3 preguntas para confirmar:
+> - qué mensajes exactos debo devolver en las notas,
+> - como tratar los casos de números iguales en "mayor_de_tres",
+> - y cómo es exactamente la regla matemática del año bisiesto.
+> Despues de mis respuestas, recién ahí propone el codigo con if/elif/else.
+> A su vez hazme una breve descripcion por fuera del codigo explicandome para que sirve cada parte del codigo y los resultados que otorga.
 
 **Resultado obtenido**:
-
+La IA me hizo las tres preguntas correspondientes. Luego de responderle, genero las funciones con la estructura condicional correcta y me agregó una explicación detallada de como funciona el flujo de los `if/elif/else` y la logica de los operadores logicos (`and`, `or`) en el caso del año bisiesto.
 
 **¿Lo usaste tal cual o lo modificaste?**
-
+Lo usé tal cual. La explicación extra me sirvio para ver como son multiples condiciones simultáneas antes de pegar el codigo.
 
 ---
 
